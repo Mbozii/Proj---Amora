@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Said Yes!❤️</title>
+    <style>
+        body {
+            font-family: 'Great Vibes', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2b005d, #9961e8);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 110vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #441699;
+            color: white;
+            padding: 10 px;
+            font-size: 28px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            top: 20 px;
+        }
+
+        .play-button {
+            background-color: #441699;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 45px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .play-button:hover {
+            background-color: #441699;
+        }
+
+        .message {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgb(202, 202, 202);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .message h2 {
+            color: #050030;
+        }
+
+        .message p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .heart {
+            font-size: 100px;
+            color: #ff4d80;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #ff4d80;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #441699;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        You Said Yes!🥺
+        <!-- Play Button -->
+        <button id="playButton" class="play-button">❤️</button>
+        
+        <!-- Hidden Audio Element -->
+        <audio id="audioElement" loop>
+            <source src="Poem With Vox.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </header>
+    <div class="message">
+        <h2>Thank You, My Love</h2>
+        <p>You said yes, and the world stood still, A moment so perfect, it warms me still.</p>
+        <p>Your love, a treasure, rare and true, I can’t believe I’m here with you.</p>
+
+        <p>Like the finest investments, your love is gold, A priceless asset, more precious than told.</p>
+        <p>In the portfolio of life, you’re my greatest gain, A wealth of affection that will always remain.</p>
+        
+        <p>With every breath, I vow to show, A love that only continues to grow.</p>
+        <p>In our love, I see dividends that never cease, A growth of JOY, beyond the endless seas.</p>
+        <p>My heart is yours, today and always, In endless love, for all our days.</p>
+        <p>Together, we’ll build a future so bright, Our love, the most valuable in sight.</p>
+        <p>Forever yours,</p>
+        <p>Chimuka💙💐</p>
+    </div>
+
+    <script>
+        // Get audio element and play button
+        const audio = document.getElementById('audioElement');
+        const playButton = document.getElementById('playButton');
+
+        // Play audio when the button is clicked
+        playButton.addEventListener('click', function () {
+            audio.play().then(() => {
+                console.log("Audio is playing.");
+            }).catch((error) => {
+                console.error("Audio playback failed:", error);
+            });
+        });
+    </script>
+</body>
+</html>

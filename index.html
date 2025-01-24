@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline for My Valentine</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2b005d, #9961e8);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: auto;
+        }
+
+        header {
+            background-color: #441699;
+            color: rgba(255, 255, 255, 0.899);
+            padding: 20px;
+            font-size: 24px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 20px;
+            padding: 20px;
+            background: rgb(202, 202, 202);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 80vh; /* Adjust the height to fit content */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .event {
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #180085;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .event h2 {
+            color: #050030;
+        }
+
+        .event h3 {
+            color: #333;
+        }
+
+        .event img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        .event p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .button {
+            background-color: #22187a;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #8a1919;
+        }
+
+        .button.no {
+            background-color: #cccccc;
+            color: #444;
+        }
+
+        .button.no:hover {
+            background-color: #aaaaaa;
+        }
+
+        .final-question {
+            display: none;
+            padding-top: 20px;
+        }
+
+        .show-final-question {
+            display: block;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px;
+        }
+
+        /* Ensuring text is readable on mobile */
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+
+            .event {
+                padding: 15px;
+                margin: 15px 0;
+            }
+
+            .button {
+                padding: 10px 25px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        A Love Journey for My Baby, My Joy Besa❤️🥺
+    </header>
+    <div class="timeline">
+        <div class="event">
+            <h2>Our first Official Meeting🥹</h2>
+            <p>Saturday, 3rd June 2023 - 6PM.</p>
+            <p>Just a boy, still healing from a life-changing event.</p>
+            <img src="Media/Distant Pic.jpg" height="325" alt="Distant Image"> 
+            <img src="Media/Distant Pic 2.jpg" height="325" alt="Distant Pic 2">
+            <img src="Media/Distant Pic working.jpg" height="325" alt="Distant Pic Working">
+            <p>On this day, I felt a something special.</p>
+            <p>You smiled at me so much, my heart melted❤️🫠, wondering why I felt that way,</p>
+            <p>I knew right then that it was the start of something that would leave a lasting impression on my heart 
+            <p>FOREVER❤️.</p> 
+        </div>
+        <div class="event">
+            <h2>We became best friends👫</h2>
+            <h3>Our first Facetime.</h3>
+            <p>Friday, 18th Oct 2024 - 11AM. </p>
+            <p>I had found myself alone at work(Studio),</p>
+            <p>I told you that I was bored and you decided to Facetime me,</p>
+            <p> We talked for about an hour🥹 before I got back to work.</p>
+            <img src="Media/vid call work.PNG" height="360" width="200" alt="Our favorite moment">
+            <img src="Media/vid call work 2.PNG" height="360" width="200" alt="Down Memory Lane">
+            <img src="Media/vid call work 3.PNG" height="360" width="200" alt="Down Memory Lane">
+            <img src="Media/vid call work sad.PNG" height="360" width="200" alt="Down Memory Lane">
+        </div>
+        <div class="event">
+            <h3>You became so comfortable with me.</h3>
+            <p>Saturday, 26th Oct 2024 - 10PM. </p>
+            <p>You called me with a facemask on.</p>
+            <p>I laughed so hard because I couldn't believe what I was looking at😭.</p> 
+            <p>It was so adorable how you said you wanted to scare me😭🥹</p>
+            <p>Well, I was sooo scared😭👍🏽 - Such a beautiful moment🥹.</p>
+            <p>You showed me just how comfortable you were with me🥺.</p>
+            <p>This look you gave me still makes me melt to this day🫠.</p>
+            <p>Its the small moments that are worthwhile🥺❤️.</p>
+            <img src="Media/Night Call Face Mask.PNG" height="360" width="200" alt="Our favorite moment">
+            <img src="Media/Night Call Talking.PNG" height="360" width="200" alt="Down Memory Lane">
+            <img src="Media/Nigth Call Look.PNG" height="360" width="200" alt="Down Memory Lane">
+            <img src="Media/Night call look 2.PNG" height="360" width="200" alt="Down Memory Lane">
+        </div>
+
+        <div class="event">
+            <h2>Why You’re Amazing✨</h2>
+            <p>Every moment spent with you has made my life brighter.</p>
+            <p>Your smile, your kindness, everything about you makes me feel loved🤗.</p>
+            <p>You bring a sense of peace and joy that I’ve never known before🧖🏽‍♂️.</p> 
+            <p>Being with you feels like home, and I can’t imagine my life without your light in it☀️✨.</p>
+            <img src="Media/Cargo 88 smile.JPG" height="350" width="270" alt="Why you're amazing">
+            <img src="Media/bodycon serious.JPG" height="350" width="270" alt="Why you're amazing">
+            <img src="Media/bodycon.JPG" height="350" width="270" alt="Why youre amazing">
+            
+        </div>
+        <div class="event">
+            <h2>Why I Love You ❤️</h2>
+            <p>Joy, I love you because of your warmth, your light, and the way you make me feel truly seen.🥺</p>
+            <p>You make my world feel whole, and I’ll spend every day showing you how much you mean to me.🫂</p>
+            <p>You’ve made my life brighter every day.✨</p>
+            <p>I Love you, Joy Chimwemwe Besa ❤️</p>
+            <img src="Media/Fav.JPG" height="370" width="270" alt="Serious face Joy">
+            <img src="Media/Fav 2.JPG" height="370" width="270" alt="Serious face Joy">
+            <img src="Media/Serious Face Joy.JPG" height="370" width="270" alt="Serious face Joy">
+            
+            <div class="final-question">
+                <p>So now, I want to ask...</p>
+                <h2>Will you be my Valentine?🫴🏽💐</h2>
+                 <a href="She said yes.html">
+                    <button class="button">Yes</button>
+                </a>
+                <a href="She Said No.html">
+                    <button class="button no-button">No</button>
+                </a>
+            </div>
+        </div>
+        <audio id="audioElement" autoplay loop style="display: none;">
+            <source src="Falling in love.mp3" type="audio/mp3">
+        </audio>
+        
+        <script>
+            window.onload = function() {
+                const audio = document.getElementById('audioElement');
+                audio.play().catch(function(error) {
+                    console.error("Autoplay failed:", error);
+                });
+            };
+        </script>
+    </div>
+
+    <script>
+        const events = document.querySelectorAll('.event');
+        let currentEvent = 0;
+
+        // Function to show the next event in the timeline
+        function showNextEvent() {
+            if (currentEvent < events.length) {
+                events[currentEvent].style.opacity = 1;
+                events[currentEvent].style.transform = 'translateX(0)';
+                currentEvent++;
+            }
+            // Show final question once all events are shown
+            if (currentEvent === events.length) {
+                document.querySelector('.final-question').classList.add('show-final-question');
+            }
+        }
+
+        // Start showing events every 1 seconds
+        setInterval(showNextEvent, 2000);
+    </script>
+</body>
+</html>
